@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div>
+            <div id="legend" class="col-m-3 col-5">
+                <table>
+                    <tr>
+                        <th>
+                            Title:
+                        </th>
+                        <td>
+                            <input type="text" value="newProgress" id="newTitle" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Minimum:
+                        </th>
+                        <td>
+                            <input type="number" value="0" id="newMinimum"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Maximum:
+                        </th>
+                        <td>
+                            <input type="number" value="100" id="newMaximum"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Step:
+                        </th>
+                        <td>
+                            <input type="number" value="1" id="newStep" min="1"/>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <br/>
+                <input type="button" value="ADD" id="addButton" class="button button1"/ >
+
+                <div id="errors">
+                </div>
+            </div>
+            <div id="legend" class="col-m-3 col-5">
+                <table id="legendTable">
+                </table>
+            </div>
+
+            <div id="canvases" class="col-m-6 col-6">
+                <canvas id="canvas" width="1024" height="1024" class="col-m-12 col-12"></canvas>
+                <canvas id="background-canvas" width="1024" height="1024" class="col-m-12 col-12"></canvas>
+            </div>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
