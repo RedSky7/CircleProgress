@@ -1,0 +1,1 @@
+To change the circleProgress on mobile devices with dragging the button icon you must press and hold it for about a second.
